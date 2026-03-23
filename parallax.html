@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gravity Adventure</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="parallax.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="logo">Gravity</div>
+			<nav>
+				<ul>
+					<li><a href="#">Location</a></li>
+					<li><a href="#">Itinerary</a></li>
+					<li><a href="#">Schedule</a></li>
+					<li><a href="#">Availability</a></li>
+				</ul>
+			</nav>
+			<button class="login"><b>Login</b></button>
+		</header>
+
+		<!-- hero section -->
+		<div class="hero">
+			<div class="overlay"></div>
+			<div class="text">
+				<h1>KRAI*</h1>
+				<p>
+					Lorem ipsum dolor sit amet consectetur<br />
+					adipisicing elit. Voluptas, voluptate.
+				</p>
+				<button>
+					Adventure
+					<i
+						class="fa-solid fa-greater-than"
+						style="color: rgb(255, 254, 254)"
+					></i>
+				</button>
+			</div>
+			<img src="bear.png" alt="bears" class="bears" />
+		</div>
+
+		<section class="main">
+			<!-- section one -->
+			<section class="content">
+				<h1 class="heading">
+					Choose your <br />
+					Adventure
+				</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+					doloribus velit libero fugit impedit voluptatum nisi exercitationem
+					perferendis sequi, sint omnis qui. Cum, repellendus odio similique
+					doloribus architecto autem sapiente. Lorem ipsum dolor sit amet
+					consectetur adipisicing elit. Facilis pariatur perspiciatis itaque,
+					ratione ab cumque magni explicabo consequuntur dolore exercitationem.
+				</p>
+
+				<div class="cards">
+					<div class="camping">
+						<h1>01</h1>
+						<img src="camping.png" alt="camping" />
+						<h1>Camping</h1>
+						<p>2-5 day adventure</p>
+						<p>Starry nights & fresh air</p>
+						<p>Expert guides & gear included</p>
+						<button>Expand Details</button>
+					</div>
+					<div class="sightseeing">
+						<h1>02</h1>
+						<img src="sightseeing.png" alt="sightseeing" />
+						<h1>Sightseeing</h1>
+						<p>1-3 day scenic excursions</p>
+						<p>Hidden gems & landmarks</p>
+						<p>Comfortable transportation</p>
+						<button>Explore</button>
+					</div>
+					<div class="hiking">
+						<h1>03</h1>
+						<img src="hiking.png" alt="hiking" />
+						<h1>Hiking</h1>
+						<p>Up to 7 day expeditions</p>
+						<p>Epic trails & wild nature</p>
+						<p>For all levels of experience</p>
+						<button>Explore</button>
+					</div>
+				</div>
+			</section>
+
+			<hr />
+
+			<!-- section two -->
+			<section class="container">
+				<h1 class="heading">
+					Browse our <br />
+					Gallery
+				</h1>
+				<hr />
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+					adipisci ducimus in labore eveniet voluptatibus porro corporis minima
+					neque tenetur nulla asperiores nesciunt cum, obcaecati, officia animi
+					eligendi debitis? Voluptatum, facere facilis unde ipsum aut tempora
+					omnis placeat vero cupiditate aperiam alias eius adipisci impedit
+					nobis, nulla velit. Animi, facere. Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit. Expedita voluptate fuga quisquam
+					doloribus, ipsum illo quos vitae accusantium eius maiores?
+				</p>
+				<div class="gallery">
+					<div class="box"></div>
+					<div class="show">
+						<div class="arrow">
+							<i class="fa-solid fa-play" style="color: rgb(255, 255, 255)"></i>
+						</div>
+						<div class="image">
+							<img src="gallery-image.png" alt="gallery-image" class="img" />
+						</div>
+						<div class="details">
+							<div class="title">
+								<h1>
+									Kamchatka <br />
+									Solitude
+								</h1>
+								<h3>2024</h3>
+							</div>
+							<div class="info">
+								<h2>Photography</h2>
+								<h5>
+									21 jan 2024 / Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Nesciunt, iure.<br />
+									Lorem ipsum dolor sit amet consectetur.
+								</h5>
+								<h2>Year:</h2>
+								<h5>2024</h5>
+								<h2>Narrative:</h2>
+								<h5>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Aliquam, <br />fuga eveniet. Laudantium, aspernatur ipsum? Rem
+									voluptates repellendus<br />
+									quas cupiditate excepturi doloremque dignissimos explicabo
+									voluptate animi ipsa nisi,<br />
+									recusandae temporibus corporis!
+								</h5>
+								<button class="btn">Expand Photo</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr />
+
+			<!-- footer -->
+			<footer>
+				<h2>Gravity</h2>
+				<div class="socials">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-brands fa-twitter"></i>
+					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-linkedin-in"></i>
+				</div>
+				<input type="email" placeholder="Enter your email" />
+			</footer>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+		<script>
+			gsap.from(".arrow, .img", {
+				x: 50,
+				opacity: 0,
+				duration: 2,
+				stagger: 0.2,
+				ease: "power3.out",
+				scrollTrigger: {
+					trigger: ".show",
+					start: "top 75%",
+					end:"top 10%",
+					scrub: 1,
+				},
+			});
+			gsap.from(".text", {
+				x: -70,
+				opacity: 0,
+				duration: 2,
+				ease: "power3.out",
+			});
+			gsap.from(".bears", {
+				x: 40,
+				opacity: 0,
+				duration: 2,
+				ease: "power3.out",
+			});
+		</script>
+	</body>
+</html>
